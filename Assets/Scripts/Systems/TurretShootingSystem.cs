@@ -38,6 +38,7 @@ partial struct TurretShootingSystem : ISystem
     }
 }
 
+[WithAll(typeof(Shooting))]
 [BurstCompile]
 partial struct TurretShoot : IJobEntity
 {

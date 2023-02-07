@@ -170,4 +170,4 @@ MonoBehaviour:
   TankPrefab: {fileID: 3961864071065766690, guid: 4708c30f4e9b9ea4b9650862ce5e9f92,
     type: 3}
   TankCount: 20
-  SafeZoneRadius: 15
+  SafeZoneRadius: 20

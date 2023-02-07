@@ -14,6 +14,8 @@ class TurretAuthoring : UnityEngine.MonoBehaviour
                 CannonBallPrefab = GetEntity(authoring.CannonBallPrefab),
                 CannonBallSpawn = GetEntity(authoring.CannonBallSpawn)
             });
+
+            AddComponent<Shooting>();
         }
     }
 }
