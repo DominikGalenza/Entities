@@ -56,5 +56,7 @@ partial struct TurretShoot : IJobEntity
         {
             Speed = spawnLocalToWorld.Forward() * 20f
         });
+
+        ECB.SetComponent(instance, new URPMaterialPropertyBaseColor { Value = turret.Color });
     }
 }

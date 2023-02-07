@@ -9,6 +9,7 @@ public class CannonBallAuthoring : UnityEngine.MonoBehaviour
         public override void Bake(CannonBallAuthoring authoring)
         {
             AddComponent<CannonBall>();
+            AddComponent<URPMaterialPropertyBaseColor>();
         }
     }
 }
