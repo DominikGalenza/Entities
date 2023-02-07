@@ -10,10 +10,11 @@ partial class TankMovingSystem : SystemBase
 
         Entities
             .WithAll<Tank>()
-            .ForEach((TransformAspect transform) =>
+            .ForEach((Entity entity, TransformAspect transform) =>
             {
                 float3 position = transform.LocalPosition;
 
+                position.y = entity.Index;
                 float angle = (0.5f + noise.cnoise(position / 10f)) * 4f * math.PI;
 
                 float3 direction = float3.zero;

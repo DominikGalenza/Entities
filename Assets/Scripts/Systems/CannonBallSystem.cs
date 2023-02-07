@@ -46,9 +46,9 @@ partial struct CannonBallSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
-        var entityCommandBufferSingleton = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>();
-        var entityCommandBuffer = entityCommandBufferSingleton.CreateCommandBuffer(state.WorldUnmanaged);
-        var cannonBallJob = new CannonBallJob
+        EndSimulationEntityCommandBufferSystem.Singleton entityCommandBufferSingleton = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>();
+        EntityCommandBuffer entityCommandBuffer = entityCommandBufferSingleton.CreateCommandBuffer(state.WorldUnmanaged);
+        CannonBallJob cannonBallJob = new CannonBallJob
         {
             ECB = entityCommandBuffer.AsParallelWriter(),
             DeltaTime = SystemAPI.Time.DeltaTime
