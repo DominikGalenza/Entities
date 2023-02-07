@@ -432,3 +432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e03a25331e5098418eb889908953890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CannonBallPrefab: {fileID: 4985181698398995246, guid: fa1c96dfaf933094e822f447144e6a80,
+    type: 3}
+  CannonBallSpawn: {fileID: 1721906591}
